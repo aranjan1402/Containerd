@@ -1,0 +1,11 @@
+---
+kernelModules:
+  - overlay
+  - br_netfilter
+sysctlParams:
+  - net.bridge.bridge-nf-call-iptables 
+  - net.ipv4.ip_forward                 
+  - net.bridge.bridge-nf-call-ip6tables 
+Module:
+  - overlay
+  - br_netfilter
